@@ -1,7 +1,6 @@
 import java.util.*;
 public class Main {
     public static void main(){
-        System.out.println("Enter the speed, initial distance, yellow light duration, intersection width,positive and negative acceleration");
     }
 
 
