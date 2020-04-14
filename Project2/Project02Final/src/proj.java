@@ -1,8 +1,11 @@
 public class proj {
+   
    public  double M1,M2,M3,m1,m2,m3,F;
     public static int g = 10;
 
-    public  void check(double M2,double M3,double m1,double m2,double m3,double F){
+    //actuallyhas no point as turns out the main part is report so the cose is actually pretty unfinished just 
+   //wanted to write the formulas to find a1,a2,a3a and T, to understand how i got the results of the doc
+   public  boolean check(double M2,double M3,double m1,double m2,double m3,double F){
         if( M1> 10&& M1 <= 10 )
             this.M1 = M1;
         else {
@@ -45,15 +48,18 @@ public class proj {
             System.out.println("Force must be from -300 to 300");
             return;
         }
+       return true;
 
         }
+  
     // from book excercises we get a1-a2+a3 = 0
     // as I mentioned in preliminary I had acceleration without friction now ading frition we get the following equations for accelerations of masses
     // a1 = (F + myu1(M1*g+M2*g) +T) / (M1-M3), a2 = (T + myu2*M2*g )/M2, a3 = (T - M3*g - myu3*M3*a1 )/M3
             double a1 = ((M3+M2)*(F-m1*(M1+M2)*g)-(1-m1)*(1-m2)*M2*M3*g)/((M1+M3)*(M3+M2)+(1-m1)*(2*m3*M3+M3)*M2);
             double T = (M2*M3*g+(2*m3*M3+M3)*a1*M2-m2*M2*M3*g)/(M3+M2);
             double a2 =  (T-M3*g-M3*a1*(2*m3-1)/(-M3));
-            double a3 = ( T - M3*g - m3*M3*a1)/M3;
+            double a3 = ( T - M3(g - m3*a1)/M3;
+                         
 
     }
 
