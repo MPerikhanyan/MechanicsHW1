@@ -54,7 +54,7 @@ public class proj {
   
     // from book excercises we get a1-a2+a3 = 0
     // as I mentioned in preliminary I had acceleration without friction now ading frition we get the following equations for accelerations of masses
-    // a1 = (F + myu1(M1*g+M2*g) +T) / (M1-M3), a2 = (T + myu2*M2*g )/M2, a3 = (T - M3*g - myu3*M3*a1 )/M3
+    // a1 = (F + m1(M1*g+M2*g) +T) / (M1-M3), a2 = (T + m2*M2*g )/M2, a3 = (T - M3*g - m3*M3*a1 )/M3
             double a1 = ((M3+M2)*(F-m1*(M1+M2)*g)-(1-m1)*(1-m2)*M2*M3*g)/((M1+M3)*(M3+M2)+(1-m1)*(2*m3*M3+M3)*M2);
             double T = (M2*M3*g+(2*m3*M3+M3)*a1*M2-m2*M2*M3*g)/(M3+M2);
             double a2 =  (T-M3*g-M3*a1*(2*m3-1)/(-M3));
